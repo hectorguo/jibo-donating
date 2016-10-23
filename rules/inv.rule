@@ -1,0 +1,7 @@
+TopRule = $* (
+    $inv $item {name=item._name}
+) of $size {size=size._size};
+
+inv = find $*;
+item @= (*$w){_name = _parsed};
+size @= size ($w){_size = _parsed};

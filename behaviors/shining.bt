@@ -1,0 +1,48 @@
+{
+    "1": {
+        "id": 1,
+        "class": "Sequence",
+        "name": "",
+        "options": {},
+        "children": [
+            "1a5adf9e-357d-452e-a451-0a91771d2872"
+        ],
+        "decorators": [
+            "b91269f5-9dda-491c-8c94-5a77b3aba386"
+        ]
+    },
+    "meta": {
+        "version": 1
+    },
+    "1a5adf9e-357d-452e-a451-0a91771d2872": {
+        "id": "1a5adf9e-357d-452e-a451-0a91771d2872",
+        "class": "PlayAnimation",
+        "name": "",
+        "options": {
+            "animPath": "shining.keys",
+            "config": [
+                "(animation) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
+    },
+    "b91269f5-9dda-491c-8c94-5a77b3aba386": {
+        "id": "b91269f5-9dda-491c-8c94-5a77b3aba386",
+        "class": "WhileCondition",
+        "name": "",
+        "options": {
+            "init": [
+                "() => {",
+                "}"
+            ],
+            "conditional": [
+                "() => {",
+                "    return true;",
+                "}"
+            ]
+        },
+        "asset-pack": "core"
+    }
+}

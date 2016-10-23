@@ -1,0 +1,77 @@
+{
+    "version": "0.6.0",
+    "framerate": 30,
+    "duration": 74,
+    "scale": 1,
+    "layers": [
+        {
+            "id": "4fd8b33aa0eb480c8588278daa72345b",
+            "name": "LED",
+            "type": "LED",
+            "visible": true,
+            "locked": false,
+            "keyframes": [
+                {
+                    "value": {
+                        "Color": {
+                            "r": 255,
+                            "g": 31,
+                            "b": 31
+                        }
+                    },
+                    "time": 15
+                },
+                {
+                    "value": {
+                        "Color": {
+                            "r": 255,
+                            "g": 255,
+                            "b": 31
+                        }
+                    },
+                    "time": 30
+                },
+                {
+                    "value": {
+                        "Color": {
+                            "r": 31,
+                            "g": 255,
+                            "b": 57
+                        }
+                    },
+                    "time": 45
+                },
+                {
+                    "value": {
+                        "Color": {
+                            "r": 31,
+                            "g": 236,
+                            "b": 255
+                        }
+                    },
+                    "time": 54
+                },
+                {
+                    "value": {
+                        "Color": {
+                            "r": 38,
+                            "g": 31,
+                            "b": 255
+                        }
+                    },
+                    "time": 63
+                },
+                {
+                    "value": {
+                        "Color": {
+                            "r": 255,
+                            "g": 31,
+                            "b": 218
+                        }
+                    },
+                    "time": 73
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "1": {
+        "id": 1,
+        "class": "Sequence",
+        "name": "",
+        "options": {},
+        "children": [
+            "5e85351e-f3b8-4709-ae26-8c210c30403b",
+            "14606278-507a-416e-b09a-dccfb358f1a5",
+            "355c6836-e96d-4764-b244-c647dac8f6f0"
+        ],
+        "decorators": [
+            "56364102-c1a9-4b30-b9f8-b44357ae1615"
+        ]
+    },
+    "meta": {
+        "version": 1
+    },
+    "355c6836-e96d-4764-b244-c647dac8f6f0": {
+        "id": "355c6836-e96d-4764-b244-c647dac8f6f0",
+        "class": "PlayAnimation",
+        "name": "",
+        "options": {
+            "animPath": "excited.keys",
+            "config": [
+                "(animation) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
+    },
+    "5e85351e-f3b8-4709-ae26-8c210c30403b": {
+        "id": "5e85351e-f3b8-4709-ae26-8c210c30403b",
+        "class": "Listen",
+        "name": "",
+        "options": {
+            "getOptions": [
+                "() => {",
+                "    let options = {",
+                "        heyJibo: false,",
+                "        detectEnd: false,",
+                "        incremental: true,",
+                "        authenticateSpeaker: ''",
+                "    }",
+                "    return options;",
+                "}"
+            ],
+            "rule": "inv.rule",
+            "onResult": [
+                "(listener) => {",
+                "  var apiai = require('apiai');",
+                "",
+                "  var app = apiai(\"e4052b53b8df4fb59c5fa0c69f6096a3\");",
+                "",
+                "  listener.on('hey-jibo', function(asrResult, speakerIds) {",
+                "      // available if heyJibo is set to true",
+                "      notepad.heardHeyJibo = true; //example variable notepad.heardHeyJibo",
+                "    });",
+                "",
+                "    listener.on('cloud', function(asrResult, speakerIds) {",
+                "      // always available",
+                "      console.log('cloud', asrResult, speakerIds);",
+                "      var request = app.textRequest(asrResult.Input);",
+                "",
+                "      request.on('response', function(response) {",
+                "          console.log(response);",
+                "          notepad.ai = response; //example variable book defined from rule",
+                "      });",
+                "",
+                "      request.on('error', function(error) {",
+                "          console.log(error);",
+                "      });",
+                "",
+                "      request.end();",
+                "    });",
+                "",
+                "    listener.on('incremental', function(asrResult, speakerIds) {",
+                "      // available if incremental is set to true",
+                "      console.log('incremental', asrResult.NLParse); //logs everything that Jibo hears to the console",
+                "    });",
+                "",
+                "    listener.on('end', function(asrResult, speakerIds) {",
+                "      // available if detectEnd is set to true",
+                "      notepad.heardEnd = true; //example variable notepad.heardEnd",
+                "    });",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
+    },
+    "14606278-507a-416e-b09a-dccfb358f1a5": {
+        "id": "14606278-507a-416e-b09a-dccfb358f1a5",
+        "class": "TextToSpeechJs",
+        "name": "",
+        "options": {
+            "getWords": [
+                "(callback) => {",
+                "  console.log('callbackSpeech', notepad);",
+                "    const txt = notepad.ai && notepad.ai.result ? notepad.ai.result.fulfillment.speech : 'waiting';",
+                "    // if(txt.match(/sad/)) {",
+                "    //   playSadAnimation();",
+                "    // } else {",
+                "    //   playHappy();",
+                "    // }",
+                "    callback(txt);",
+                "}"
+            ],
+            "onWord": [
+                "(word) => {",
+                "  console.log('txtToSpeech', word);",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
+    },
+    "56364102-c1a9-4b30-b9f8-b44357ae1615": {
+        "id": "56364102-c1a9-4b30-b9f8-b44357ae1615",
+        "class": "WhileCondition",
+        "name": "",
+        "options": {
+            "init": [
+                "() => {",
+                "}"
+            ],
+            "conditional": [
+                "() => {",
+                "    return true;",
+                "}"
+            ]
+        },
+        "asset-pack": "core"
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "1": {
+        "id": 1,
+        "class": "Sequence",
+        "name": "",
+        "options": {},
+        "children": [
+            "01774336-d50e-42c4-b844-5f06d202ce87",
+            "beb12f8e-7b95-44c0-9b52-f5fe6c24ac96"
+        ]
+    },
+    "meta": {
+        "version": 1
+    },
+    "2c0a803a-729b-44ce-a00f-1a2d35343fb6": {
+        "id": "2c0a803a-729b-44ce-a00f-1a2d35343fb6",
+        "class": "Subtree",
+        "name": "welcome",
+        "options": {
+            "behaviorPath": "welcome.bt",
+            "getNotepad": [
+                "() => {",
+                "    return {};",
+                "}"
+            ],
+            "onResult": [
+                "(treeResult) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": "01774336-d50e-42c4-b844-5f06d202ce87"
+    },
+    "beb12f8e-7b95-44c0-9b52-f5fe6c24ac96": {
+        "id": "beb12f8e-7b95-44c0-9b52-f5fe6c24ac96",
+        "class": "Subtree",
+        "name": "talk",
+        "options": {
+            "behaviorPath": "talk.bt",
+            "getNotepad": [
+                "() => {",
+                "    return {};",
+                "}"
+            ],
+            "onResult": [
+                "(treeResult) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
+    },
+    "92563021-bc0f-4b1b-a4e5-edb57bdd900d": {
+        "id": "92563021-bc0f-4b1b-a4e5-edb57bdd900d",
+        "class": "Subtree",
+        "name": "shining",
+        "options": {
+            "behaviorPath": "shining.bt",
+            "getNotepad": [
+                "() => {",
+                "    return {};",
+                "}"
+            ],
+            "onResult": [
+                "(treeResult) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": "01774336-d50e-42c4-b844-5f06d202ce87"
+    },
+    "01774336-d50e-42c4-b844-5f06d202ce87": {
+        "id": "01774336-d50e-42c4-b844-5f06d202ce87",
+        "class": "Parallel",
+        "name": "",
+        "options": {
+            "succeedOnOne": false
+        },
+        "asset-pack": "core",
+        "parent": 1,
+        "children": [
+            "92563021-bc0f-4b1b-a4e5-edb57bdd900d",
+            "2c0a803a-729b-44ce-a00f-1a2d35343fb6"
+        ]
+    }
+}
