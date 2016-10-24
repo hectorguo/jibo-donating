@@ -10,7 +10,8 @@
     "apiai": "^3.0.2",
     "array-from": "^2.0.2",
     "behaviorify": "^1.0.0",
-    "jibo": "^3.0.0"
+    "jibo": "^3.0.0",
+    "node-fetch": "^1.6.3"
   },
   "devDependencies": {},
   "license": "UNLICENSED",

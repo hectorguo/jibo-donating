@@ -27,16 +27,6 @@
         "asset-pack": "core",
         "parent": "3fb0db72-1669-45ee-a591-651a51de2d02"
     },
-    "54fefa8b-8681-4069-849e-b67f3b4bb7b8": {
-        "id": "54fefa8b-8681-4069-849e-b67f3b4bb7b8",
-        "class": "PlayAudio",
-        "name": "",
-        "options": {
-            "audioPath": "Jordan Belfort - Wes Walker & Dyl.mp3"
-        },
-        "asset-pack": "core",
-        "parent": "3fb0db72-1669-45ee-a591-651a51de2d02"
-    },
     "3fb0db72-1669-45ee-a591-651a51de2d02": {
         "id": "3fb0db72-1669-45ee-a591-651a51de2d02",
         "class": "Parallel",
@@ -47,8 +37,7 @@
         "asset-pack": "core",
         "parent": 1,
         "children": [
-            "ea48156e-02fb-4d6b-ac0c-dd78d7a67d71",
-            "54fefa8b-8681-4069-849e-b67f3b4bb7b8"
+            "ea48156e-02fb-4d6b-ac0c-dd78d7a67d71"
         ]
     },
     "f5814f84-90dd-4a77-8d84-6771341b37d3": {

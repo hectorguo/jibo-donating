@@ -5,7 +5,8 @@
         "name": "",
         "options": {},
         "children": [
-            "01774336-d50e-42c4-b844-5f06d202ce87",
+            "cfb74252-7fe7-4042-a96f-360308d2eb9e",
+            "fd7fde6f-d9a1-4eca-8150-06d40eee8477",
             "beb12f8e-7b95-44c0-9b52-f5fe6c24ac96"
         ]
     },
@@ -29,7 +30,7 @@
             ]
         },
         "asset-pack": "core",
-        "parent": "01774336-d50e-42c4-b844-5f06d202ce87"
+        "parent": "cfb74252-7fe7-4042-a96f-360308d2eb9e"
     },
     "beb12f8e-7b95-44c0-9b52-f5fe6c24ac96": {
         "id": "beb12f8e-7b95-44c0-9b52-f5fe6c24ac96",
@@ -48,7 +49,8 @@
             ]
         },
         "asset-pack": "core",
-        "parent": 1
+        "parent": 1,
+        "children": []
     },
     "92563021-bc0f-4b1b-a4e5-edb57bdd900d": {
         "id": "92563021-bc0f-4b1b-a4e5-edb57bdd900d",
@@ -67,10 +69,11 @@
             ]
         },
         "asset-pack": "core",
-        "parent": "01774336-d50e-42c4-b844-5f06d202ce87"
+        "parent": "cfb74252-7fe7-4042-a96f-360308d2eb9e",
+        "decorators": []
     },
-    "01774336-d50e-42c4-b844-5f06d202ce87": {
-        "id": "01774336-d50e-42c4-b844-5f06d202ce87",
+    "cfb74252-7fe7-4042-a96f-360308d2eb9e": {
+        "id": "cfb74252-7fe7-4042-a96f-360308d2eb9e",
         "class": "Parallel",
         "name": "",
         "options": {
@@ -82,5 +85,24 @@
             "92563021-bc0f-4b1b-a4e5-edb57bdd900d",
             "2c0a803a-729b-44ce-a00f-1a2d35343fb6"
         ]
+    },
+    "fd7fde6f-d9a1-4eca-8150-06d40eee8477": {
+        "id": "fd7fde6f-d9a1-4eca-8150-06d40eee8477",
+        "class": "Subtree",
+        "name": "center robot",
+        "options": {
+            "behaviorPath": "common/center-robot.bt",
+            "getNotepad": [
+                "() => {",
+                "    return {};",
+                "}"
+            ],
+            "onResult": [
+                "(treeResult) => {",
+                "}"
+            ]
+        },
+        "asset-pack": "core",
+        "parent": 1
     }
 }

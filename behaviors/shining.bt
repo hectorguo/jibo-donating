@@ -7,9 +7,7 @@
         "children": [
             "1a5adf9e-357d-452e-a451-0a91771d2872"
         ],
-        "decorators": [
-            "b91269f5-9dda-491c-8c94-5a77b3aba386"
-        ]
+        "decorators": []
     },
     "meta": {
         "version": 1
@@ -27,22 +25,5 @@
         },
         "asset-pack": "core",
         "parent": 1
-    },
-    "b91269f5-9dda-491c-8c94-5a77b3aba386": {
-        "id": "b91269f5-9dda-491c-8c94-5a77b3aba386",
-        "class": "WhileCondition",
-        "name": "",
-        "options": {
-            "init": [
-                "() => {",
-                "}"
-            ],
-            "conditional": [
-                "() => {",
-                "    return true;",
-                "}"
-            ]
-        },
-        "asset-pack": "core"
     }
 }

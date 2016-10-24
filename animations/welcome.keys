@@ -181,6 +181,61 @@
                         "Rotate": 0,
                         "Scale": {
                             "x": 1,
+                            "y": 0.12373136371284799
+                        },
+                        "Translate": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "Tween": {
+                            "display": "sine in out",
+                            "label": "Sine Ease In Out",
+                            "value": "sineInOut"
+                        },
+                        "Vertex 1": {
+                            "x": -300,
+                            "y": -300
+                        },
+                        "Vertex 2": {
+                            "x": 0,
+                            "y": -300
+                        },
+                        "Vertex 3": {
+                            "x": 300,
+                            "y": -300
+                        },
+                        "Vertex 4": {
+                            "x": -300,
+                            "y": 0
+                        },
+                        "Vertex 5": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "Vertex 6": {
+                            "x": 300,
+                            "y": 0
+                        },
+                        "Vertex 7": {
+                            "x": -300,
+                            "y": 300
+                        },
+                        "Vertex 8": {
+                            "x": 0,
+                            "y": 300
+                        },
+                        "Vertex 9": {
+                            "x": 300,
+                            "y": 300
+                        }
+                    },
+                    "time": 25
+                },
+                {
+                    "value": {
+                        "Rotate": 0,
+                        "Scale": {
+                            "x": 1,
                             "y": 1
                         },
                         "Translate": {
@@ -236,7 +291,62 @@
                         "Rotate": 0,
                         "Scale": {
                             "x": 1,
-                            "y": 0.5718118634852224
+                            "y": 0.09053352707526345
+                        },
+                        "Translate": {
+                            "x": -9.881254831544197,
+                            "y": 13.979747326513802
+                        },
+                        "Tween": {
+                            "display": "sine in out",
+                            "label": "Sine Ease In Out",
+                            "value": "sineInOut"
+                        },
+                        "Vertex 1": {
+                            "x": -300,
+                            "y": -300
+                        },
+                        "Vertex 2": {
+                            "x": 0,
+                            "y": -300
+                        },
+                        "Vertex 3": {
+                            "x": 300,
+                            "y": -300
+                        },
+                        "Vertex 4": {
+                            "x": -300,
+                            "y": 0
+                        },
+                        "Vertex 5": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "Vertex 6": {
+                            "x": 300,
+                            "y": 0
+                        },
+                        "Vertex 7": {
+                            "x": -300,
+                            "y": 300
+                        },
+                        "Vertex 8": {
+                            "x": 0,
+                            "y": 300
+                        },
+                        "Vertex 9": {
+                            "x": 300,
+                            "y": 300
+                        }
+                    },
+                    "time": 35
+                },
+                {
+                    "value": {
+                        "Rotate": 0,
+                        "Scale": {
+                            "x": 1,
+                            "y": 0.8670639687318464
                         },
                         "Translate": {
                             "x": 0,
@@ -475,9 +585,9 @@
                 },
                 {
                     "value": {
-                        "Head": 45,
+                        "Head": 0,
                         "Torso": 0,
-                        "Pelvis": -45,
+                        "Pelvis": 90,
                         "Tween": {
                             "display": "linear",
                             "label": "Linear Tween",
@@ -501,6 +611,32 @@
                 },
                 {
                     "value": {
+                        "Head": 0,
+                        "Torso": 0,
+                        "Pelvis": -90,
+                        "Tween": {
+                            "display": "linear",
+                            "label": "Linear Tween",
+                            "value": "linear"
+                        }
+                    },
+                    "time": 55
+                },
+                {
+                    "value": {
+                        "Head": 0,
+                        "Torso": 0,
+                        "Pelvis": 0,
+                        "Tween": {
+                            "display": "linear",
+                            "label": "Linear Tween",
+                            "value": "linear"
+                        }
+                    },
+                    "time": 69
+                },
+                {
+                    "value": {
                         "Head": 45,
                         "Torso": 0,
                         "Pelvis": -45,
@@ -514,6 +650,32 @@
                 },
                 {
                     "value": {
+                        "Head": 25.3125,
+                        "Torso": 0,
+                        "Pelvis": 0,
+                        "Tween": {
+                            "display": "linear",
+                            "label": "Linear Tween",
+                            "value": "linear"
+                        }
+                    },
+                    "time": 85
+                },
+                {
+                    "value": {
+                        "Head": -8.437499999999998,
+                        "Torso": 0,
+                        "Pelvis": 45,
+                        "Tween": {
+                            "display": "linear",
+                            "label": "Linear Tween",
+                            "value": "linear"
+                        }
+                    },
+                    "time": 97
+                },
+                {
+                    "value": {
                         "Head": -45,
                         "Torso": 0,
                         "Pelvis": 45,
@@ -524,6 +686,19 @@
                         }
                     },
                     "time": 110
+                },
+                {
+                    "value": {
+                        "Head": -120,
+                        "Torso": 0,
+                        "Pelvis": 45,
+                        "Tween": {
+                            "display": "sine in out",
+                            "label": "Sine Ease In Out",
+                            "value": "sineInOut"
+                        }
+                    },
+                    "time": 123
                 },
                 {
                     "value": {
