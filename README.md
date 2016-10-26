@@ -15,5 +15,6 @@ We used [Jibo robot](https://www.jibo.com/) to combine with [api.ai](https://api
 Install [Atom](https://atom.io/) with [Jibo-sdk](https://atom.io/packages/jibo-sdk) plugin in.
 
 Start `Play` button to run this demo.
+![](http://ww4.sinaimg.cn/large/6d0af205gw1f96fxt2b2bj21kw106agl.jpg)
 
 More developer guides can be seen on [Jibo SDK](https://developers.jibo.com/sdk/docs/about/about-the-jibo-sdk.html)
